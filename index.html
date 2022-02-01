@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moon River</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="slick/slick.css">
+</head>
+<body>
+  <header class="header">
+    <ul class="header__nav list-reset">
+      <li class="header__item logo"><a><img src="img/moonriver.svg" alt="Moon River"></a></li>
+      <li class="header__item logo--white"><a><img src="img/moonriver-white.svg" alt="Moon River"></a></li>
+      <li class="header__item like"><a href="#"><img src="img/heart.svg" alt="Иконка сендца"></a></li>
+      <li class="header__item profile"><a href="#"><img src="img/profile.svg" alt="Иконка профиля"></a></li>
+      <li class="header__item cart"><a href="#"><img src="img/cart.svg" alt="Иконка корзины"></a></li>
+      <li><button class="header__item burger btn-reset"><img src="img/burger.svg" title="Кнопка открытия модульного окна"></button></li>
+      <li><button class="header__item close btn-reset"><img src="img/close.svg" title="Кнопка закрытия модульного окна"></button></li>
+    </ul>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="hero__left">
+      <h1 class="hero__title">High jewelry</h1>
+      <a href="" class="hero__link">Смотреть коллекцию</a>
+      <ul class="hero__lang-select lang list-reset">
+        <li class="lang__item"><a class="lang__link" href="">RU</a></li>
+        <li class="lang__item"><a class="lang__link" href="">EN</a></li>
+      </ul>
+      </div>
+      <div class="hero__right">
+        <img src="img/hero-image.jpg" alt="Кольцо с бриллиантами" class="hero__image"> 
+        <div class="hero__image-descr product">
+          <h3 class="product__name">Кольцо Trinity, Cartier</h3>
+          <p class="product__composition">Белове золото, бриллианты</p>
+          <span class="product__price">498 000 ₽</span>
+        </div>
+      </div>
+    </section>
+    
+    <section class="modal">
+      <ul class="modal__nav product-list list-reset">
+        <li class="product-list__item"><a class="product-list__link" href="#">Ювелирные изделия</a></li>
+        <li class="product-list__item"><a class="product-list__link" href="#">Часы</a></li>
+        <li class="product-list__item"><a class="product-list__link" href="#">Ароматы</a></li>
+        <li class="product-list__item"><a class="product-list__link" href="#">Бренды</a></li></li>
+        <li class="product-list__item"><a class="product-list__link" href="#">Изделия из кожи</a></li></li>
+        <li class="product-list__item"><a class="product-list__link" href="#">Свадебные украшения</a></li></li>
+        <li class="product-list__item"><a class="product-list__link" href="#">Другое</a></li></li>
+      </ul>
+
+      <div class="modal__wrapper">
+        <div class="modal__catalog catalog">
+          <ul class="catalog__for-whom list-reset">
+            <li class="catalog__title">Для кого</li>
+            <li class="catalog__item"><a class="catalog__link" href="#">Для женщин</a></li>
+            <li class="catalog__item"><a class="catalog__link" href="#">Для мужчин</a></li>
+            <li class="catalog__item"><a class="catalog__link" href="#">Для детей</a></li>
+          </ul>
+          <ul class="catalog__categories list-reset">
+            <li class="catalog__title">Категории</li>
+            <li class="catalog__item"><a class="catalog__link" href="#">Кольца</a></li>
+            <li class="catalog__item"><a class="catalog__link" href="#">Браслеты</a></li>
+            <li class="catalog__item"><a class="catalog__link" href="#">Колье</a></li>
+            <li class="catalog__item"><a class="catalog__link" href="#">Серьги</a></li>
+            <li class="catalog__item"><a class="catalog__link" href="#">Броши</a></li>
+          </ul>
+          <ul class="catalog__material list-reset">
+            <li class="catalog__title">Материал</li>
+            <li class="catalog__item"><a class="catalog__link" href="#">Изделия с бриллиантами</a></li>
+            <li class="catalog__item"><a class="catalog__link" href="#">Желтое золото</a></li>
+            <li class="catalog__item"><a class="catalog__link" href="#">Белое золото</a></li>
+            <li class="catalog__item"><a class="catalog__link" href="#">Розовое золото</a></li>
+          </ul>
+          <ul class="catalog__brand list-reset">
+            <li class="catalog__title">Бренд</li>
+            <li class="catalog__item"><a class="catalog__link" href="#">Mercury</a></li>
+            <li class="catalog__item"><a class="catalog__link" href="#">Chopard</a></li>
+            <li class="catalog__item"><a class="catalog__link" href="#">Cartier</a></li>
+            <li class="catalog__item"><a class="catalog__link" href="#">Graff</a></li>
+            <li class="catalog__item"><a class="catalog__link" href="#">Garrard</a></li>
+            <li class="catalog__item"><a class="catalog__link catalog__view-all" href="#">Показать все бренды</a></li>
+          </ul>
+        </div>
+
+        <div class="modal__social">
+          <div class="modal__banner banner">
+            <p class="banner__title">Новая коллекция by Mercury</p>
+            <p class="banner__descr">Juste un clou</p>
+            <a href="#" class="banner__link">Смотреть коллекцию<img class="banner__arrow"src="img/arrow-right.svg" alt="Переход в коллекцию">
+            </a>
+          </div>
+          <div class="footer__hot-line modal__hot-line">
+            <h3 class="footer__title">Телефон горячей линии</h3>
+            <span class="footer__phone">+7 800 456 456</span>
+            <ul class="footer__social list-reset">
+              <li class="footer__facebook"><a href="#"><img src="img/fb.svg" alt="Иконка facebook"></a></li>
+              <li><a href="#"><img src="img/inst.svg" alt="Иконка instagram"></a></li>
+            </ul>
+          </div>
+          <div class="footer__newsletter modal__newsletter">
+            <h3 class="footer__title">Подпишитесь на новости</h3>
+            <form class="footer__form" action="#">
+              <input class="footer__email" type="email" placeholder="Введите E-mail">
+              <button class="footer__submit-buttom" type="submit" title="Кнопка отправки почты для рассылки"></button>
+            </form>
+            <ul class="footer__app list-reset">
+              <li><a href="#"><img src="img/apple-store-badge.svg" alt="Переход в app store"></a></li>
+              <li><a href="#"><img src="img/google-play-badge.svg" alt="Переход в google play"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog-for-men catalog-for">
+      <p class="catalog-for__descr">Перейти в раздел</p>
+      <a class="catalog-for__link" href="#">Для мужчин</a>
+    </section>
+
+    <section class="catalog-for-women">
+      <p class="catalog-for__descr">Перейти в раздел</p>
+      <a class="catalog-for__link" href="#">Для женщин</a>
+    </section>
+
+    <section class="find">
+      <div class="find__left">
+        <p class="find__title">Найди<br> бутик около себя</p>
+        <p class="find__descr">Введите свой адрес и узнайте о самых ближайших бутиках к вам</p>
+        <form class="find__address addreess-form" action="#">
+          <input class="addreess-form__input" type="text" placeholder="Введите адрес">
+          <button class="addreess-form__submit-buttom" type="submit" title="Кнопка поиска магазина"></button>
+        </form>
+      </div>
+      <div class="find__right map">
+        <img src="img/marker.png" alt="магазин" class="map__maker map__marker-1">
+        <img src="img/marker-white.svg" alt="магазин на Тверской" title="ул.Тверская, 24" class="map__maker map__marker-2">
+        <img src="img/marker.png" alt="магазин" class="map__maker map__marker-3">
+        <img src="img/marker.png" alt="магазин" class="map__maker map__marker-4">
+        <img src="img/marker.png" alt="магазин" class="map__maker map__marker-5">
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery__item">
+        <img class="gallery__image-1" src="img/gallery-1.jpg" alt="Кольцо с бриллиантом">
+        <h3 class="gallery__title">Кольцо JOW'S, CARTIER</h3>
+        <p class="gallery__composition">Белое золото, бриллианты</p>
+        <span class="gallery__price">674 000 ₽</span>
+      </div>
+      <div class="gallery__item gallery__item--cell-2">
+        <h3 class="gallery__title gallery__title--cell-2">Колье ETOILE, HUBLOT</h3>
+        <p class="gallery__composition gallery__composition--cell-2">Белое золото, бриллианты</p>
+        <span class="gallery__price">539 000 ₽</span>
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__image-3" src="img/gallery-3.jpg" alt="Серьги с сапфиром">
+        <h3 class="gallery__title">Серьги MOON, HUBLOT</h3>
+        <p class="gallery__composition">Желтое золото, сапфир</p>
+        <span class="gallery__price">498 000 ₽</span>
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__image-4" src="img/gallery-4.jpg" alt="Золотое кольцо">
+        <h3 class="gallery__title">Кольцо CROIX, CARTIER</h3>
+        <p class="gallery__composition">Желтое золото, розовое золото</p>
+        <span class="gallery__price">432 000 ₽</span>
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__image-5" src="img/gallery-5.jpg" alt="Серьги с жемчугом">
+        <h3 class="gallery__title">Серьги WIN, BLANCPAIN</h3>
+        <p class="gallery__composition">Желтое золото, жемчуг</p>
+        <span class="gallery__price">398 000 ₽</span>
+      </div>
+    </section>
+
+    <section class="social">
+      <div class="social__network">
+        <h2 class="social__title">Мы<br> в социальныx сетях</h2>
+        <div class="social__slider slider">
+          <ul class="slider__list list-reset" >
+            <li class="slider__item"><img class="slide" src="img/slider-foto-1.jpg" width="236" height="385" alt=""></li>
+            <li class="slider__item"><img class="slide" src="img/slider-foto-2.jpg" width="353" height="385" alt=""></li>
+            <li class="slider__item"><img class="slide" src="img/slider-foto-3.jpg" width="282" height="385" alt=""></li>
+            <li class="slider__item"><img class="slide" src="img/slider-foto-4.jpg" width="352" height="385" alt=""></li>
+            <li class="slider__item"><img class="slide" src="img/slider-foto-5.jpg" width="310" height="385" alt=""></li>
+          </ul>
+
+          <div class="social__wrapper">
+            <a href="" class="social__link"><img src="img/fb.svg" alt=""></a>
+            <a href="" class="social__link"><img src="img/inst.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="social__main-store contacts">
+        <img class="contacts__image" src="img/main-store-image.jpg" width="720" alt="Девушка на берюзовом фоне">
+        <div class="contacts__main-section">
+          <div class="contacts__main-store">
+            <h3 class="contacts__title-store" >Телефон флагманского магазина</h3>
+            <span class="contacts__phone">+7 800 456 456</span>
+          </div>
+          <div class="contacts__newsletter">
+            <h3 class="contacts__title-newsletter">Подпишитесь на новости</h3>
+            <form class="contacts__newsletter-form" action="#">
+              <input class="contacts__email" type="email" placeholder="Введите E-mail">
+              <button class="contacts__submit-buttom" type="submit" title="Кнопка отправки почты для рассылки"></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <ul class="footer__nav list-reset">
+      <li class="footer__item"><a class="footer__link" href="#">Работа в компании</a></li>
+      <li class="footer__item"><a class="footer__link" href="#">Условия пользования</a></li>
+      <li class="footer__item"><a class="footer__link" href="#">Выходные данные</a></li>
+      <li class="footer__item"><a class="footer__link" href="#">Политика конфиденциальности</a></li>
+      <li class="footer__item"><a class="footer__link" href="#">Карта сайта</a></li>
+    </ul>
+    <div class="footer__wrapper">
+      <img src="img/moonriver-white.svg" alt="" class="footer__logo">
+      <div class="footer__hot-line">
+        <h3 class="footer__title">Телефон горячей линии</h3>
+        <span class="footer__phone">+7 800 456 456</span>
+        <ul class="footer__social list-reset">
+          <li class="footer__facebook"><a href="#"><img src="img/fb.svg" alt="Иконка facebook"></a></li>
+          <li><a href="#"><img src="img/inst.svg" alt="Иконка instagram"></a></li>
+        </ul>
+      </div>
+      <div class="footer__newsletter">
+        <h3 class="footer__title">Подпишитесь на новости</h3>
+        <form class="footer__form" action="#">
+          <input class="footer__email" type="email" placeholder="Введите E-mail">
+          <button class="footer__submit-buttom" type="submit" title="Кнопка отправки почты для рассылки"></button>
+        </form>
+        <ul class="footer__app list-reset">
+          <li><a href="#"><img src="img/apple-store-badge.svg" alt="Переход в app store"></a></li>
+          <li><a href="#"><img src="img/google-play-badge.svg" alt="Переход в google play"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/modal.js"></script>
+</body>
+</html>
